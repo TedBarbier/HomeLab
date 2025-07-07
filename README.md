@@ -10,8 +10,8 @@ L’idée principale est de dépasser la simple utilisation d’une box Internet
 
 | Composant     | Rôle principal                                      | Services hébergés                          |
 |---------------|-----------------------------------------------------|--------------------------------------------|
-| Raspberry Pi 4 (Raspberry Pi OS Lite 64-bit Bookworm + Pimox) | Sécurité réseau et domotique                | Home Assistant, Fail2Ban, Suricata*        |
-| NAS Synology  | Infrastructure réseau + services réseau             | WireGuard, Pi-hole, DDNS, (peut-être OPNsense via Docker) |
+| Raspberry Pi 4| Sécurité réseau et domotique                        | Home Assistant, Fail2Ban, Suricata*        |
+| NAS Synology  | Infrastructure réseau + services réseau             | WireGuard, Pi-hole, DDNS (OPENSENSE)       |
 
 > \* *Suricata sera hébergé sur le RPi sauf si je peux le faire tourner comme plugin via OPNsense/PFsense sur le NAS.*
 
@@ -87,6 +87,7 @@ L’idée principale est de dépasser la simple utilisation d’une box Internet
 
 - [x] Déploiement du VPN WireGuard
 - [x] Mise en place de Pi-hole sur le NAS
+- [ ] Installation de pimox
 - [ ] Réinstallation de Home Assistant
 - [ ] Configuration de Fail2Ban sur le RPi
 - [ ] Test Suricata en local et en plugin via OPNsense
@@ -132,4 +133,4 @@ Ce projet me permet de :
 ## ✍️ Auteur
 
 **@TedBarbier**  
-Étudiant en cybersécurité passionné de réseau et de domotique.
+Étudiant en cybersécurité passionné de réseau et d'infrastructure.

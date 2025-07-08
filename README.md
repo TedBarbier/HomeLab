@@ -88,7 +88,7 @@ L’idée principale est de dépasser la simple utilisation d’une box Internet
 
 - [x] Déploiement du VPN WireGuard
 - [x] Mise en place de Pi-hole sur le NAS
-- [ ] Installation de pimox
+- [x] Installation de pimox
 - [ ] Réinstallation de Home Assistant
 - [ ] Configuration de Fail2Ban sur le RPi
 - [ ] Test Suricata en local et en plugin via OPNsense

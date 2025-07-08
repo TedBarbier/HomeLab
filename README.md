@@ -126,8 +126,8 @@ Ce projet me permet de :
 ## 🛠️ Made with
 - Raspberry Pi OS Lite 64-bit (Bookworm)
 - Synology DSM + Container Manager
-- WireGuard, Pi-hole, Fail2Ban, Suricata
-- (Possiblement) OPNsense, Home Assistant
+- WireGuard, Pi-hole, Fail2Ban, Suricata, Home Assistant
+- (Possiblement) OPNsense, pfsense
 
 ---
 

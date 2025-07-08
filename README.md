@@ -49,8 +49,8 @@ L’idée principale est de dépasser la simple utilisation d’une box Internet
 |----------------|------|--------|-------------|
 | WireGuard       | VPN | ✅ Fonctionnel | NAS         |
 | Pi-hole         | DNS filtrant, anti-pub | ✅ Fonctionnel | NAS         |
-| Pimox           | Virtualiser différents système en parallèles sur le raspberry | ⏳ En cours  | RPi    |
-| Home Assistant  | Domotique | ❌ pas commencé (nécessite pimox) | RPi         |
+| Pimox           | Virtualiser différents système en parallèles sur le raspberry | ✅ Fonctionnel  | RPi    |
+| Home Assistant  | Domotique | ⏳ En cours | RPi         |
 | Fail2Ban        | Blocage IP brute-force | ❌ pas commencé (nécessite pimox) | RPi         |
 | Suricata        | IDS/IPS réseau | ❓ En évaluation | RPi ou NAS   |
 | OPNsense / pfSense | Pare-feu complet | ❓ En évaluation (Docker) | NAS         |

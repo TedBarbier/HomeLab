@@ -50,7 +50,7 @@ L’idée principale est de dépasser la simple utilisation d’une box Internet
 | WireGuard       | VPN | ✅ Fonctionnel | NAS         |
 | Pi-hole         | DNS filtrant, anti-pub | ✅ Fonctionnel | NAS         |
 | Pimox           | Virtualiser différents système en parallèles sur le raspberry | ✅ Fonctionnel  | RPi    |
-| Home Assistant  | Domotique | ⏳ En cours | RPi         |
+| Home Assistant  | Domotique | ✅ Fonctionnel | RPi         |
 | Fail2Ban        | Blocage IP brute-force | ❌ pas commencé (nécessite pimox) | RPi         |
 | Suricata        | IDS/IPS réseau | ❓ En évaluation | RPi ou NAS   |
 | OPNsense / pfSense | Pare-feu complet | ❓ En évaluation (Docker) | NAS         |
@@ -89,7 +89,7 @@ L’idée principale est de dépasser la simple utilisation d’une box Internet
 - [x] Déploiement du VPN WireGuard
 - [x] Mise en place de Pi-hole sur le NAS
 - [x] Installation de pimox
-- [ ] Réinstallation de Home Assistant
+- [x] Réinstallation de Home Assistant
 - [ ] Configuration de Fail2Ban sur le RPi
 - [ ] Test Suricata en local et en plugin via OPNsense
 - [ ] Évaluation et déploiement d’OPNsense sur le NAS (Docker)

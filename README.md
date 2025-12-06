@@ -63,24 +63,35 @@ L’idée principale est de dépasser la simple utilisation d’une box Internet
 
 ## 📊 Architecture réseau (vue simplifiée)
 
-```
-                    ┌───────────────────────┐
-                    │       Internet        │
-                    └───────────────────────┘
-                               │
-                        [ Box FAI / Routeur ]
-                               │
-         ┌───────────────────────────────────────────┐
-         │                                           │
- ┌───────▼────────┐                          ┌───────▼─────────┐
- │      NAS       │                          │  Raspberry Pi   │
- │   (Synology)   │                          │  4 (Pimox)      │
- │                │                          │                 │
- │ - WireGuard    │                          │ - Home Assistant│
- │ - AdGuard Home │                          │ - Fail2Ban      │
- │ - DDNS         │                          │ - Suricata (*)  │
- │ - (OPNsense ?) │                          │                 │
- └────────────────┘                          └─────────────────┘
+```mermaid
+flowchart TD
+    %% Définition des nœuds
+    Internet[Internet]
+    Router[Box FAI / Routeur]
+
+    %% Nœud NAS avec mise en forme HTML pour la liste
+    NAS["<b>NAS<br/>(Synology)</b>
+    <hr/>
+    <div style='text-align: left'>
+    - WireGuard<br/>
+    - AdGuard Home<br/>
+    - DDNS<br/>
+    - (OPNsense ?)
+    </div>"]
+
+    %% Nœud RPi avec mise en forme HTML pour la liste
+    RPi["<b>Raspberry Pi<br/>4 (Pimox)</b>
+    <hr/>
+    <div style='text-align: left'>
+    - Home Assistant<br/>
+    - Fail2Ban<br/>
+    - Suricata (*)
+    </div>"]
+
+    %% Connexions
+    Internet --> Router
+    Router --> NAS
+    Router --> RPi
 ```
 
 > *Remarque : si Suricata est plus pertinent en plugin via OPNsense, il migrera sur le NAS.*

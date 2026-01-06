@@ -55,9 +55,27 @@ Afin de ne pas surcharger le processeur du Raspberry Pi et de préserver les res
 
 ## 📊 Architecture réseau
 
-![archi homelab](archi_homelab.png)
+```mermaid
+flowchart TD
+    Internet[Internet] --> Router[Box FAI / Routeur]
 
-## 🗓️ Roadmap & Suivi
+    subgraph RPi_Node [Raspberry Pi 4 - Pimox]
+        HA[Home Assistant]
+        Zigbee[Dongle Zigbee Haute Perf]
+        Swap[Swap 2Go]
+        HA <--> Zigbee
+        HA --- Swap
+    end
+
+    subgraph NAS_Node [NAS Synology]
+        WG[WireGuard VPN]
+        AG[AdGuard Home]
+        DDNS[DDNS]
+    end
+
+    Router --- RPi_Node
+    Router --- NAS_Node
+```# 🗓️ Roadmap & Suivi
 
 * [x] Déploiement du VPN WireGuard
 * [x] Mise en place de AdGuard Home sur le NAS

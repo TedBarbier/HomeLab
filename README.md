@@ -75,7 +75,8 @@ flowchart TD
 
     Router --- RPi_Node
     Router --- NAS_Node
-```# 🗓️ Roadmap & Suivi
+```
+# 🗓️ Roadmap & Suivi
 
 * [x] Déploiement du VPN WireGuard
 * [x] Mise en place de AdGuard Home sur le NAS

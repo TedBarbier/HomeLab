@@ -55,7 +55,7 @@ Afin de ne pas surcharger le processeur du Raspberry Pi et de préserver les res
 
 ## 📊 Architecture réseau
 
-![archi homelab](archi_homelab.svg)
+![archi homelab](archi_homelab.png)
 
 ## 🗓️ Roadmap & Suivi
 
